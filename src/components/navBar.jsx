@@ -1,6 +1,5 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-// import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -33,34 +32,38 @@ export default function NavBar() {
                         noWrap
                         sx={{ flexGrow: 1 }}
                     >
-                        Project Name
+                        WaterCount
                     </Typography>
                     <nav>
                         <Link
                             variant="button"
+                            underline="none"
                             color="text.primary"
-                            href="#"
+                            href="/"
                             sx={{ my: 1, mx: 1.5 }}
                         >
-                            Features
+                            Home
                         </Link>
                         <Link
                             variant="button"
+                            underline="none"
                             color="text.primary"
-                            href="#"
+                            href="/about"
                             sx={{ my: 1, mx: 1.5 }}
                         >
                             About
                         </Link>
-                        <Subscribe />
+                        <Link
+                            variant="button"
+                            underline="none"
+                            color="text.primary"
+                            href="/resources"
+                            sx={{ my: 1, mx: 1.5 }}
+                        >
+                            Resources
+                        </Link>
+                        {/* <Subscribe /> */}
                     </nav>
-                    {/* <Button
-                        href="#"
-                        variant="outlined"
-                        sx={{ my: 1, mx: 1.5 }}
-                    >
-                        Login
-                    </Button> */}
                 </Toolbar>
             </AppBar>
         </React.Fragment>

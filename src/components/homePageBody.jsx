@@ -51,7 +51,7 @@ c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3
                                     />
                                 </g>
                             </svg>
-                            <h1>Water Consumption Calculator</h1>
+                            <h1>WaterCount Calculator</h1>
                         </div>
                         <CalculateWaterUsageModal />
                     </div>

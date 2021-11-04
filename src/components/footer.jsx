@@ -25,17 +25,7 @@ function Copyright(props) {
 const footers = [
     {
         title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-    },
-    {
-        title: 'Features',
-        description: [
-            'Cool stuff',
-            'Random feature',
-            'Team feature',
-            'Developer stuff',
-            'Another one',
-        ],
+        description: ['Team', 'History', 'Contact us'],
     },
     {
         title: 'Resources',
@@ -68,7 +58,6 @@ export default function Footer() {
                 sx={{
                     borderTop: (theme) =>
                         `1px solid ${theme.palette.divider}`,
-                    mt: 8,
                     py: [3, 6],
                 }}
             >
@@ -76,9 +65,10 @@ export default function Footer() {
                     container
                     spacing={4}
                     justifyContent="space-evenly"
+                    textAlign="center"
                 >
                     {footers.map((footer) => (
-                        <Grid item xs={6} sm={3} key={footer.title}>
+                        <Grid item xs={12} sm={3} key={footer.title}>
                             <Typography
                                 variant="h6"
                                 color="text.primary"

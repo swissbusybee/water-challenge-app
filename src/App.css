@@ -141,3 +141,7 @@ p {
   align-items: center;
   opacity: 0.30
 }
+
+.tip-text {
+  padding-left: 0.5em;
+}

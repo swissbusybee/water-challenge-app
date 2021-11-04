@@ -18,6 +18,8 @@ import KitchenSink from '../images/kitchenSink.png';
 import Shower from '../images/shower.png';
 import People from '../images/people.png';
 import WaterContainerJug from './waterContainerJug';
+import WaterUsageTips from './waterUsageTips';
+import WaveFooter from './waveFooter';
 
 export default function CalculateWaterUsageModal() {
     const [open, setOpen] = React.useState(false);
@@ -116,21 +118,25 @@ export default function CalculateWaterUsageModal() {
                 open={open}
                 onClose={handleClose}
                 fullWidth={true}
-                maxWidth={'md'}
+                maxWidth={'lg'}
             >
                 <DialogTitle>Calculate Water Usage</DialogTitle>
                 <DialogContent>
                     <Grid container>
-                        <Grid item xs={8}>
+                        <Grid item xs={12} md={6}>
                             <Box sx={{ m: 1 }}>
                                 <img
                                     src={People}
                                     alt="people"
-                                    width="64"
-                                    height="45"
+                                    width="62"
+                                    height="40"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{
+                                        ml: 1,
+                                        mb: 1,
+                                        width: 400,
+                                    }}
                                     variant="standard"
                                 >
                                     <InputLabel id="people-select-label">
@@ -172,11 +178,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={Shower}
                                     alt="shower"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="shower-select-label">
@@ -210,11 +216,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={BathroomSink}
                                     alt="bathroom sink"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="bathroom-faucet-select-label">
@@ -250,11 +256,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={KitchenSink}
                                     alt="kitchen sink"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="kitchen-faucet-select-label">
@@ -288,11 +294,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={DishWasher}
                                     alt="dishwasher"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="dishwasher-select-label">
@@ -331,11 +337,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={WashingMachine}
                                     alt="washing machine"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="washing-machine-select-label">
@@ -375,11 +381,11 @@ export default function CalculateWaterUsageModal() {
                                 <img
                                     src={Bathtub}
                                     alt="bathtub"
-                                    width="65"
-                                    height="75"
+                                    width="60"
+                                    height="70"
                                 ></img>
                                 <FormControl
-                                    sx={{ m: 1, width: 450 }}
+                                    sx={{ m: 1, width: 400 }}
                                     variant="standard"
                                 >
                                     <InputLabel id="bathtub-select-label">
@@ -411,9 +417,21 @@ export default function CalculateWaterUsageModal() {
                                         </MenuItem>
                                     </Select>
                                 </FormControl>
+                                <WaterUsageTips
+                                    showerDuration={showerDuration}
+                                    bathroomFaucetDuration={
+                                        bathroomFaucetDuration
+                                    }
+                                    kitchenFaucetDuration={
+                                        kitchenFaucetDuration
+                                    }
+                                    bathtub={bathtub}
+                                    washingMachine={washingMachine}
+                                    dishwasher={dishwasher}
+                                />
                             </Box>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={6}>
                             <Grid container direction={'row'}>
                                 <h4>
                                     {showerDuration ||
@@ -440,53 +458,7 @@ export default function CalculateWaterUsageModal() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    {/* <!--Waves Container--> */}
-                    <div>
-                        <svg
-                            className="waves"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 24 150 28"
-                            preserveAspectRatio="none"
-                            shapeRendering="auto"
-                        >
-                            <defs>
-                                <path
-                                    id="gentle-wave"
-                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                                />
-                            </defs>
-                            <g className="parallax">
-                                <use
-                                    xlinkHref="#gentle-wave"
-                                    x="48"
-                                    y="0"
-                                    fill="#11B5E4"
-                                    opacity="0.2"
-                                />
-                                <use
-                                    xlinkHref="#gentle-wave"
-                                    x="48"
-                                    y="6"
-                                    fill="rgba(255,255,255,0.5)"
-                                />
-                                <use
-                                    xlinkHref="#gentle-wave"
-                                    x="48"
-                                    y="8"
-                                    fill="rgba(255,255,255,0.3)"
-                                />
-                                <use
-                                    xlinkHref="#gentle-wave"
-                                    x="48"
-                                    y="10"
-                                    fill="#11B5E4"
-                                    opacity="0.2"
-                                />
-                            </g>
-                        </svg>
-                    </div>
-                    {/* <!--Waves end--> */}
+                    <WaveFooter />
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleReset}>Reset</Button>
