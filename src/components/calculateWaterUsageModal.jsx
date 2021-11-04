@@ -123,7 +123,7 @@ export default function CalculateWaterUsageModal() {
                 <DialogTitle>Calculate Water Usage</DialogTitle>
                 <DialogContent>
                     <Grid container>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={7}>
                             <Box sx={{ m: 1 }}>
                                 <img
                                     src={People}
@@ -431,7 +431,7 @@ export default function CalculateWaterUsageModal() {
                                 />
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={5}>
                             <Grid container direction={'row'}>
                                 <h4>
                                     {showerDuration ||

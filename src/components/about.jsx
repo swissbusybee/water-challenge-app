@@ -35,6 +35,16 @@ export default function About() {
                     they consume and remind them how they can conserve
                     water.
                 </p>
+                <p>
+                    It can very surprising to learn how much water
+                    you're using in a day. Have you ever thought about
+                    how much water your shower uses? Or how much
+                    running the dishwasher every night contributes to
+                    your bill? It's good to be aware of how much water
+                    your daily activities are using - once you know
+                    you're a lot more conscious of how you can save
+                    water.
+                </p>
             </Container>
         </React.Fragment>
     );

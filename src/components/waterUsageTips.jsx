@@ -104,7 +104,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Turn off the faucet while you cook or clean. 7 liters of water is used each minute it is on'
+                            'Turn off the faucet while you cook or clean. 7 liters is used each minute it is on'
                         }
                     />
                 );
@@ -112,7 +112,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Turn off the faucet while you cook or clean. 7 liters of water is used each minute it is on'
+                            'Turn off the faucet while you cook or clean. 7 liters is used each minute it is on'
                         }
                     />
                 );
@@ -120,7 +120,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Turn off the faucet while you cook or clean. 7 liters of water is used each minute it is on'
+                            'Turn off the faucet while you cook or clean. 7 liters is used each minute it is on'
                         }
                     />
                 );
@@ -135,7 +135,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Check regularly for clogs. This will help save water by cleaning dishes more effectively'
+                            'Check for clogs. This will help save water by cleaning dishes more effectively'
                         }
                     />
                 );
@@ -143,7 +143,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Check regularly for clogs. This will help save water by cleaning dishes more effectively'
+                            'Check for clogs. This will help save water by cleaning dishes more effectively'
                         }
                     />
                 );
@@ -151,7 +151,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Check regularly for clogs. This will help save water by cleaning dishes more effectively'
+                            'Check for clogs. This will help save water by cleaning dishes more effectively'
                         }
                     />
                 );
@@ -159,7 +159,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Check regularly for clogs. This will help save water by cleaning dishes more effectively'
+                            'Check for clogs. This will help save water by cleaning dishes more effectively'
                         }
                     />
                 );
@@ -213,7 +213,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Baths are luxurious but it takes about 100 liters of water to fill. Reduce baths if possible'
+                            'Baths are nice but it takes about 100 liters of water to fill. Reduce baths if possible'
                         }
                     />
                 );
@@ -221,7 +221,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Baths are luxurious but it takes about 100 liters of water to fill. Reduce baths if possible'
+                            'Baths are nice but it takes about 100 liters of water to fill. Reduce baths if possible'
                         }
                     />
                 );
@@ -229,7 +229,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Baths are luxurious but it takes about 100 liters of water to fill. Reduce baths if possible'
+                            'Baths are nice but it takes about 100 liters of water to fill. Reduce baths if possible'
                         }
                     />
                 );
@@ -237,7 +237,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Baths are luxurious but it takes about 100 liters of water to fill. Reduce baths if possible'
+                            'Baths are nice but it takes about 100 liters of water to fill. Reduce baths if possible'
                         }
                     />
                 );
