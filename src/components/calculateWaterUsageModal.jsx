@@ -17,6 +17,7 @@ import DishWasher from '../images/dishWasher.png';
 import KitchenSink from '../images/kitchenSink.png';
 import Shower from '../images/shower.png';
 import People from '../images/people.png';
+import Beef from '../images/beef.png';
 import WaterContainerJug from './waterContainerJug';
 import WaterUsageTips from './waterUsageTips';
 import WaveFooter from './waveFooter';
@@ -32,6 +33,7 @@ export default function CalculateWaterUsageModal() {
     const [washingMachine, setWashingMachine] = React.useState('');
     const [bathtub, setBathtub] = React.useState('');
     const [people, setPeople] = React.useState('');
+    const [beef, setBeef] = React.useState('');
 
     const handleChangeShower = (event) => {
         setShowerDuration(event.target.value);
@@ -61,11 +63,16 @@ export default function CalculateWaterUsageModal() {
         setPeople(event.target.value);
     };
 
+    const handleChangeBeef = (event) => {
+        setBeef(event.target.value);
+    };
+
     const handleReset = (event) => {
         setPeople('');
         setBathtub('');
         setWashingMachine('');
         setDishwasher('');
+        setBeef('');
         setKitchenFaucetDuration('');
         setBathroomFaucetDuration('');
         setShowerDuration('');
@@ -87,6 +94,7 @@ export default function CalculateWaterUsageModal() {
     const numberOfWaterContainers = Math.round(
         ((weeklyShowerDuration +
             weeklyBathroomFaucetDuration +
+            beef +
             weeklykitchenFaucetDuration +
             dishwasher +
             washingMachine +
@@ -99,6 +107,7 @@ export default function CalculateWaterUsageModal() {
         (weeklyShowerDuration +
             weeklyBathroomFaucetDuration +
             weeklykitchenFaucetDuration +
+            beef +
             dishwasher +
             washingMachine +
             bathtub) *
@@ -248,6 +257,47 @@ export default function CalculateWaterUsageModal() {
                                         </MenuItem>
                                         <MenuItem value={120}>
                                             Over 15 Min
+                                        </MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </Box>
+                            <Box sx={{ m: 1 }}>
+                                <img
+                                    src={Beef}
+                                    alt="beef"
+                                    width="60"
+                                    height="70"
+                                ></img>
+                                <FormControl
+                                    sx={{ m: 1, width: 400 }}
+                                    variant="standard"
+                                >
+                                    <InputLabel id="beef-select-label">
+                                        How often do you eat beef per
+                                        week?
+                                    </InputLabel>
+                                    <Select
+                                        labelId="beef-select-label"
+                                        id="beef-select"
+                                        value={beef}
+                                        label="Beef"
+                                        onChange={handleChangeBeef}
+                                    >
+                                        {/* 2400 per serving 150 gram */}
+                                        <MenuItem value={0}>
+                                            I don't eat beef
+                                        </MenuItem>
+                                        <MenuItem value={4800}>
+                                            1 to 2 times per week
+                                        </MenuItem>
+                                        <MenuItem value={9600}>
+                                            3 to 4 times per week
+                                        </MenuItem>
+                                        <MenuItem value={14400}>
+                                            5 to 6 times per week
+                                        </MenuItem>
+                                        <MenuItem value={19200}>
+                                            7 or more times per week
                                         </MenuItem>
                                     </Select>
                                 </FormControl>
@@ -428,26 +478,32 @@ export default function CalculateWaterUsageModal() {
                                     bathtub={bathtub}
                                     washingMachine={washingMachine}
                                     dishwasher={dishwasher}
+                                    beef={beef}
                                 />
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={5}>
                             <Grid container direction={'row'}>
-                                <h4>
-                                    {showerDuration ||
-                                    bathroomFaucetDuration ||
-                                    kitchenFaucetDuration ||
-                                    dishwasher ||
-                                    washingMachine ||
-                                    bathtub
-                                        ? numberOfWaterLiters +
-                                          ' Liters per week'
-                                        : ''}
-                                </h4>
-                                <div className="water-container-legend">
-                                    <WaterContainerJug />
-                                    {' = 15 liters'}
-                                </div>
+                                {showerDuration ||
+                                bathroomFaucetDuration ||
+                                kitchenFaucetDuration ||
+                                dishwasher ||
+                                beef ||
+                                washingMachine ||
+                                bathtub ? (
+                                    <React.Fragment>
+                                        <h4>
+                                            {numberOfWaterLiters +
+                                                ' Liters per week'}
+                                        </h4>
+                                        <div className="water-container-legend">
+                                            <WaterContainerJug />
+                                            {' = 15 liters'}
+                                        </div>
+                                    </React.Fragment>
+                                ) : (
+                                    ''
+                                )}
                             </Grid>
                             <Grid container direction={'row'}>
                                 {[

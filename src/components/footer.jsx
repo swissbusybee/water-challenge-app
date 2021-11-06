@@ -61,7 +61,7 @@ export default function Footer() {
                     py: [3, 6],
                 }}
             >
-                <Grid
+                {/* <Grid
                     container
                     spacing={4}
                     justifyContent="space-evenly"
@@ -91,7 +91,7 @@ export default function Footer() {
                             </ul>
                         </Grid>
                     ))}
-                </Grid>
+                </Grid> */}
                 <Copyright sx={{ mt: 5 }} />
             </Container>
             {/* End footer */}

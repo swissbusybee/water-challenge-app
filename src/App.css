@@ -145,3 +145,19 @@ p {
 .tip-text {
   padding-left: 0.5em;
 }
+
+.title {
+  position:relative;
+  right: 175px;
+}
+
+.dropli {
+  position: relative;
+  right: 50px;
+}
+
+.dropli-about {
+  position: relative;
+  right: 150px;
+  bottom: 20px;
+}

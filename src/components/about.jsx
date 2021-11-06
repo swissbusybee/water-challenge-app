@@ -2,6 +2,8 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
+import Dropli from '../images/dropli.png';
+import Grid from '@mui/material/Grid';
 
 export default function About() {
     return (
@@ -20,31 +22,39 @@ export default function About() {
                 alignItems="center"
                 sx={{ p: 6 }}
             >
-                <div>PROBLEM</div>
-                <p>
-                    Water is essential for life. In household and
-                    industry, some water is lost or polluted in the
-                    favour of production.
-                </p>
-                <div>SOLUTION</div>
-                <p>
-                    WaterCount is a water usage calculator that shows
-                    how much water is consumed with a visual
-                    reference. It is easy enough for a child to use
-                    and should help all to understand how much water
-                    they consume and remind them how they can conserve
-                    water.
-                </p>
-                <p>
-                    It can very surprising to learn how much water
-                    you're using in a day. Have you ever thought about
-                    how much water your shower uses? Or how much
-                    running the dishwasher every night contributes to
-                    your bill? It's good to be aware of how much water
-                    your daily activities are using - once you know
-                    you're a lot more conscious of how you can save
-                    water.
-                </p>
+                <Grid container direction={'row'}>
+                    <Grid item xs={2}>
+                        <div className="dropli-about">
+                            <img
+                                src={Dropli}
+                                alt="dropli"
+                                width="400"
+                                height="250"
+                            ></img>
+                        </div>
+                    </Grid>
+                    <Grid item xs={10}>
+                        <p>
+                            WaterCount is a water usage calculator
+                            that shows how much water is consumed with
+                            a visual references. It raises awareness
+                            of water consumption in children and their
+                            families. And engages children to learn
+                            about water conservation to empower them
+                            to influence the future.
+                        </p>
+                        <p>
+                            It can very surprising to learn how much
+                            water you're using in a day. Have you ever
+                            thought about how much water your shower
+                            uses? Or how much eating beef impacts
+                            water conservation? It's good to be aware
+                            of how much water you consume - once you
+                            know you're a lot more conscious of how
+                            you can save water.
+                        </p>
+                    </Grid>
+                </Grid>
             </Container>
         </React.Fragment>
     );

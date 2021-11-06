@@ -212,6 +212,53 @@ export default function Resources() {
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
+                        <div>DIET</div>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <Box pt={1.75}>
+                                <OpacityIcon color="primary" />
+                            </Box>
+                            <p>
+                                Try Meatless Monday and go vegetarian
+                                one day a week. It could significantly
+                                lower your water footprint.
+                            </p>
+                        </Grid>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <Box pt={1.75}>
+                                <OpacityIcon color="primary" />
+                            </Box>
+                            <p>
+                                Choose pasture-raised products: When
+                                you do eat meat, dairy and eggs, opt
+                                for pasture-raised products.
+                            </p>
+                        </Grid>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <Box pt={1.75}>
+                                <OpacityIcon color="primary" />
+                            </Box>
+                            <p>
+                                Avoid processed foods: A lot of water
+                                goes into processing foods. Opt for
+                                more fruits, vegetables, leafy greens
+                                (like spinach and kale) and whole
+                                grains.
+                            </p>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
                         <div>GENERAL</div>
                         <Grid
                             container

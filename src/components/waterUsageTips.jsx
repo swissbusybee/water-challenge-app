@@ -10,6 +10,7 @@ export default function WaterUsageTips(props) {
         dishwasher,
         washingMachine,
         bathtub,
+        beef,
     } = props;
 
     const showerDurationTips = (duration) => {
@@ -57,7 +58,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Use cold water to brush your teeth because when you save energy, you also save water'
+                            'Use cold water to brush your teeth because saving energy, saves water'
                         }
                     />
                 );
@@ -246,6 +247,45 @@ export default function WaterUsageTips(props) {
         }
     };
 
+    const beefTips = (duration) => {
+        switch (duration) {
+            case 4800:
+                return (
+                    <TipContainer
+                        tipText={
+                            'Eat more veggies. It takes a huge amount of water to produce animal products.'
+                        }
+                    />
+                );
+            case 9600:
+                return (
+                    <TipContainer
+                        tipText={
+                            'Eat more veggies. It takes a huge amount of water to produce animal products.'
+                        }
+                    />
+                );
+            case 14400:
+                return (
+                    <TipContainer
+                        tipText={
+                            'Eat more veggies. It takes a huge amount of water to produce animal products.'
+                        }
+                    />
+                );
+            case 19200:
+                return (
+                    <TipContainer
+                        tipText={
+                            'Eat more veggies. It takes a huge amount of water to produce animal products.'
+                        }
+                    />
+                );
+            default:
+                return '';
+        }
+    };
+
     return (
         <Grid container direction={'column'} spacing={1} pt={2}>
             <Grid item>{showerDurationTips(showerDuration)}</Grid>
@@ -258,6 +298,7 @@ export default function WaterUsageTips(props) {
             <Grid item>{dishwasherTips(dishwasher)}</Grid>
             <Grid item>{washingMachineTips(washingMachine)}</Grid>
             <Grid item>{bathtubTips(bathtub)}</Grid>
+            <Grid item>{beefTips(beef)}</Grid>
         </Grid>
     );
 }
