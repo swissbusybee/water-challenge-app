@@ -1,6 +1,8 @@
-# Get Started with WaterCount
+# Get Started with Dropli
 
-WaterCount is a water usage calculator that shows how much water is consumed with a visual reference. It is easy enough for a child to use and should help all to understand how much water they consume and remind them how they can conserve water.
+Dropli is a fun & easy app that helps educate children on how to conserve water.
+
+It includes a calculator that calculates how much water is consumed with a visual references. It raises awareness of water consumption and engages children to learn about water conservation to empower them to influence the future.
 
 ## Set up Steps
 
