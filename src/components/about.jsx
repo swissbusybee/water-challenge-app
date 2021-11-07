@@ -35,11 +35,14 @@ export default function About() {
                     </Grid>
                     <Grid item xs={10}>
                         <p>
-                            WaterCount is a water usage calculator
-                            that shows how much water is consumed with
-                            a visual references. It raises awareness
-                            of water consumption in children and their
-                            families. And engages children to learn
+                            Dropli is a fun & easy app that helps
+                            educate children on how to conserve water.
+                        </p>
+                        <p>
+                            It includes a calculator that calculates
+                            how much water is consumed with a visual
+                            references. It raises awareness of water
+                            consumption and engages children to learn
                             about water conservation to empower them
                             to influence the future.
                         </p>

@@ -33,7 +33,7 @@ export default function HomePageBody() {
                                 ></img>
                             </div>
                             <div className="title">
-                                <h1>WaterCount Digital Calculator</h1>
+                                <h1>Dropli Digital Calculator</h1>
                             </div>
                         </div>
                         <CalculateWaterUsageModal />

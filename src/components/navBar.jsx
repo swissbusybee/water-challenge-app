@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Subscribe from './subscribe';
+import '@fontsource/shrikhand';
 
 export default function NavBar() {
     return (
@@ -32,7 +33,21 @@ export default function NavBar() {
                         noWrap
                         sx={{ flexGrow: 1 }}
                     >
-                        WaterCount
+                        <Link
+                            variant="button"
+                            underline="none"
+                            href="/"
+                        >
+                            <div
+                                style={{
+                                    fontFamily: 'Shrikhand',
+                                    fontSize: '1.5em',
+                                    color: 'gray',
+                                }}
+                            >
+                                Dropli
+                            </div>
+                        </Link>
                     </Typography>
                     <nav>
                         <Link

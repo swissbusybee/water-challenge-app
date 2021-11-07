@@ -21,6 +21,7 @@ import Beef from '../images/beef.png';
 import WaterContainerJug from './waterContainerJug';
 import WaterUsageTips from './waterUsageTips';
 import WaveFooter from './waveFooter';
+import Dropli from '../images/dropli.png';
 
 export default function CalculateWaterUsageModal() {
     const [open, setOpen] = React.useState(false);
@@ -129,7 +130,10 @@ export default function CalculateWaterUsageModal() {
                 fullWidth={true}
                 maxWidth={'lg'}
             >
-                <DialogTitle>Calculate Water Usage</DialogTitle>
+                <DialogTitle>
+                    Droply wants you to calculate how much water you
+                    use!
+                </DialogTitle>
                 <DialogContent>
                     <Grid container>
                         <Grid item xs={12} md={7}>
@@ -502,7 +506,12 @@ export default function CalculateWaterUsageModal() {
                                         </div>
                                     </React.Fragment>
                                 ) : (
-                                    ''
+                                    <div className="dropli-modal">
+                                        <img
+                                            src={Dropli}
+                                            alt="dropli"
+                                        ></img>
+                                    </div>
                                 )}
                             </Grid>
                             <Grid container direction={'row'}>

@@ -42,23 +42,9 @@ export default function Resources() {
                                 <OpacityIcon color="primary" />
                             </Box>
                             <p>
-                                Install a low flow showerhead to help
-                                save half the water compared to older
-                                versions
-                            </p>
-                        </Grid>
-                        <Grid
-                            container
-                            justifyContent="center"
-                            spacing={1}
-                        >
-                            <Box pt={1.75}>
-                                <OpacityIcon color="primary" />
-                            </Box>
-                            <p>
-                                Turn off the water if you shave or
-                                brush your teeth in the shower or sink
-                                to save time
+                                Turn off the water if you brush your
+                                teeth in the shower or sink to save
+                                time
                             </p>
                         </Grid>
                         <Grid

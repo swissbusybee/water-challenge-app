@@ -3,6 +3,11 @@
   pointer-events: none;
 }
 
+.app-title { 
+  font-family: "Shrikhand"; 
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -148,16 +153,22 @@ p {
 
 .title {
   position:relative;
-  right: 175px;
+  right: 180px;
 }
 
 .dropli {
   position: relative;
-  right: 50px;
+  right: 40px;
 }
 
 .dropli-about {
   position: relative;
   right: 150px;
+  bottom: 20px;
+}
+
+.dropli-modal {
+  position: relative;
+  right: 300px;
   bottom: 20px;
 }
