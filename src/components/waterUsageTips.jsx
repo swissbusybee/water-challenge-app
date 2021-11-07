@@ -66,7 +66,7 @@ export default function WaterUsageTips(props) {
                 return (
                     <TipContainer
                         tipText={
-                            'Turn off the water when you brush your teeth or shave'
+                            'Each time you run the faucet while you brush your teeth you’re wasting about 6 liters per minute'
                         }
                     />
                 );
