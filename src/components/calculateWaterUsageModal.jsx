@@ -131,8 +131,7 @@ export default function CalculateWaterUsageModal() {
                 maxWidth={'lg'}
             >
                 <DialogTitle>
-                    Dropli wants you to calculate how much water you
-                    use!
+                    Dropli wants to calculate how much water you use!
                 </DialogTitle>
                 <DialogContent>
                     <Grid container>
