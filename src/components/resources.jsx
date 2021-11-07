@@ -6,6 +6,8 @@ import WaveFooter from './waveFooter';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import OpacityIcon from '@mui/icons-material/Opacity';
+import Body from '../images/body.png';
+import Bread from '../images/bread.png';
 
 export default function Resources() {
     return (
@@ -19,7 +21,111 @@ export default function Resources() {
             <Container maxWidth="lg" sx={{ p: 6 }}>
                 <Grid container spacing={4} textAlign="center">
                     <Grid item xs={12}>
-                        <div>BATHROOM</div>
+                        <div>FUN FACTS</div>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            alignItems="center"
+                            spacing={1}
+                        >
+                            <Grid item>
+                                <p>
+                                    Water makes up about 65 percent of
+                                    the human body.
+                                </p>
+                            </Grid>
+                            <Grid item>
+                                <img
+                                    src={Body}
+                                    alt="body"
+                                    width="250"
+                                    height="150"
+                                ></img>
+                            </Grid>
+                        </Grid>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            alignItems="center"
+                            spacing={1}
+                        >
+                            <Grid item>
+                                <p>
+                                    Did you know that one slice of
+                                    bread requires approximately 40
+                                    liters of water.
+                                </p>
+                            </Grid>
+                            <Grid item>
+                                <img
+                                    src={Bread}
+                                    alt="bread"
+                                    width="250"
+                                    height="150"
+                                ></img>
+                            </Grid>
+                        </Grid>
+
+                        <div> INTERESTING EXPERIMENTS</div>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <p>
+                                You need: bucket, timer and
+                                measurement cup
+                            </p>
+                            <p>
+                                Take the bucket, put it under the
+                                faucet. Let the water run for exactly
+                                one minute. Then measure how much
+                                water you have in the bucket. Compare
+                                several faucets at your home! Time as
+                                well how long the water is running
+                                while you wash your hands. Calculate
+                                how much water is used!
+                            </p>
+                            <p>
+                                Time how long the water is running
+                                while you wash your hands. Calculate
+                                how much water is used with Dropli!
+                            </p>
+                            <p>
+                                Then use that water collected in the
+                                buckets and use it to water the
+                                garden.
+                            </p>
+                        </Grid>
+                        <div>BATHROOM TIPS</div>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <Box pt={1.75}>
+                                <OpacityIcon color="primary" />
+                            </Box>
+                            <p>
+                                Did you know that the we use an
+                                average of 9 liters per minute in the
+                                shower?
+                            </p>
+                        </Grid>
+                        <Grid
+                            container
+                            justifyContent="center"
+                            spacing={1}
+                        >
+                            <Box pt={1.75}>
+                                <OpacityIcon color="primary" />
+                            </Box>
+                            <p>
+                                When we turn off the tap while
+                                brushing our teeth, we save about 6
+                                litres of water each minute.
+                            </p>
+                        </Grid>
                         <Grid
                             container
                             justifyContent="center"
@@ -91,7 +197,7 @@ export default function Resources() {
                         </p>
                     </Grid>
                     <Grid item xs={12}>
-                        <div>KITCHEN</div>
+                        <div>KITCHEN TIPS</div>
                         <Grid
                             container
                             justifyContent="center"
@@ -152,7 +258,7 @@ export default function Resources() {
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
-                        <div>LAUNDRY</div>
+                        <div>LAUNDRY TIPS</div>
                         <Grid
                             container
                             justifyContent="center"
@@ -198,7 +304,7 @@ export default function Resources() {
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
-                        <div>DIET</div>
+                        <div>DIET TIPS</div>
                         <Grid
                             container
                             justifyContent="center"

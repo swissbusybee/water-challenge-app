@@ -41,7 +41,7 @@ export default function NavBar() {
                             <div
                                 style={{
                                     fontFamily: 'Shrikhand',
-                                    fontSize: '1.5em',
+                                    fontSize: '2em',
                                     color: 'gray',
                                 }}
                             >

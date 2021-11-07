@@ -131,7 +131,7 @@ export default function CalculateWaterUsageModal() {
                 maxWidth={'lg'}
             >
                 <DialogTitle>
-                    Droply wants you to calculate how much water you
+                    Dropli wants you to calculate how much water you
                     use!
                 </DialogTitle>
                 <DialogContent>
